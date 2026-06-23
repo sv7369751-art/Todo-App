@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<script src="script.js"></script>
+<link rel="stylesheet" href="style.css" />
+  <title>My Todo App</title>
+</head>
+
+
+<body>
+  <nav class="font-bold border pl-2">X-TODO</nav>
+  <div class="ml-2">
+  <h1 class="font-bold text-2xl my-4">
+    Things to get done
+  </h1>
+  <button id="refresh" class="bg-orange-400 px-5 py-1 text-white rounded-md my-2" onclick="refreshButton()">Refresh</button>
+  <h2 class="text-xl font-bold my-2">Things to do </h2>
+  
+  
+  <ul id="todolist"> <input type="checkbox" class="border">Clean my computer</input>
+  </ul>
+  <button class="bg-orange-400 rounded-full px-6 my-3" onclick="showInput()" > +Add a todo</button>
+  <div id="addTodo">
+    
+    <input type="text" id="todoInput" placeholder="enter a todo">
+    <button onclick="saveTodo()">save</button>
+  </div>
+  <h2 class="text-xl font-bold my-2">Things done </h2>
+<ul id="doneList"></ul>
+  </div>
+</body>
+
+</html>
